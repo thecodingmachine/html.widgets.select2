@@ -20,7 +20,7 @@ use Mouf\Html\Widgets\Select2\Select2;
  * A Select2Field represent a couple of &lt;label&gt; and &lt;select2 fields.
  * This class is "renderable" so you can overload the way label and select fields are displayed.
  */
-class Select2Field extends SelectField {
+class Select2MultipleField extends SelectMultipleField {
 	/**
 	 * Constructs the select2 textfield.
 	 * 
