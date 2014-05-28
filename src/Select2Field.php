@@ -28,8 +28,12 @@ class Select2Field extends SelectField {
 	 * @param string|ValueInterface $name
 	 * @param string|ValueInterface $value
 	 * @param array<string, string>|ArrayValueInterface|Option[] $options
+	 * @param Select2 $select2
 	 */
-	public function __construct($label = null, $name = null, $value = null, $options = array()) {
-		parent::__construct($label, $name, $value, $options, new Select2());
+	public function __construct($label = null, $name = null, $value = null, $options = array(), Select2 $select2 = null) {
+		if ($select2 == null) {
+			$select2 = new Select2();
+		}
+		parent::__construct($label, $name, $value, $options, $select2);
 	}
 }
