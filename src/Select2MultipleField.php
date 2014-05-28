@@ -1,5 +1,5 @@
 <?php
-namespace Mouf\Html\Widgets\Form;
+namespace Mouf\Html\Widgets\Select2;
 
 use Mouf\Html\Widgets\Form\Styles\StylableFormField;
 

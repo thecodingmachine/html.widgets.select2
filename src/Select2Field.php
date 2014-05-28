@@ -1,20 +1,11 @@
 <?php
-namespace Mouf\Html\Widgets\Form;
+namespace Mouf\Html\Widgets\Select2;
 
 use Mouf\Html\Widgets\Form\Styles\StylableFormField;
 
-use Mouf\Html\Tags\Label;
-use Mouf\Html\Renderer\Renderable;
 use Mouf\Utils\Value\ValueInterface;
-use Mouf\Html\HtmlElement\HtmlElementInterface;
-use Mouf\Html\HtmlElement\HtmlBlock;
-use Mouf\Utils\Value\ValueUtils;
-use Mouf\Html\HtmlElement\HtmlString;
-use Mouf\Html\Tags\Select;
 use Mouf\Utils\Value\ArrayValueInterface;
-use Mouf\Html\Tags\Option;
-use Mouf\Html\Tags\Optgroup;
-use Mouf\Html\Widgets\Select2\Select2;
+use Mouf\Html\Widgets\Form\SelectField;
 
 /**
  * A Select2Field represent a couple of &lt;label&gt; and &lt;select2 fields.
