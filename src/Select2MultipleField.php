@@ -15,6 +15,7 @@ use Mouf\Utils\Value\ArrayValueInterface;
 use Mouf\Html\Tags\Option;
 use Mouf\Html\Tags\Optgroup;
 use Mouf\Html\Widgets\Select2\Select2;
+use Mouf\Html\Widgets\Form\SelectMultipleField;
 
 /**
  * A Select2MultipleField represent a couple of &lt;label&gt; and &lt;select2 fields.

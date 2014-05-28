@@ -27,7 +27,9 @@ class Select2 extends Select {
 		parent::toHtml();
 		?>
 		<script type="text/javascript">
-		jQuery(document).ready(function() { jQuery('#<?= htmlentities($id) ?>').select2(); });
+		jQuery(document).ready(function() { jQuery('#<?= htmlentities($id) ?>').select2({
+			"width": "resolve"
+			}); });
 		</script>
 		<?php 
 	}
