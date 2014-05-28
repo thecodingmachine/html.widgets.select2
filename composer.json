@@ -18,8 +18,8 @@
 	],
 	"require" : {
 		"php" : ">=5.4.4",
-		"mouf/html.tags" : "~1.0",
-		"ivaynberg/select2": "~3.4"
+		"ivaynberg/select2": "~3.4",
+		"mouf/html.widgets.form-elements": "~1.0"
 	},
 	"autoload" : {
 		"psr-4" : {
