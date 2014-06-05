@@ -35,6 +35,9 @@ class Select2MultipleField extends SelectMultipleField {
 		if ($select2 == null) {
 			$select2 = new Select2();
 		}
+        if(!preg_match("/.*\\[\\]^/", $name)) {
+            $name .= "[]";
+        }
 		parent::__construct($label, $name, $value, $options, $select2);
 	}
 }
