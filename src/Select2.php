@@ -17,19 +17,14 @@ class Select2 extends Select {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		$id = $this->getId();
-		if (!$id) {
-			self::$uniqueIdCounter++;
-			$id = "select2_unique_id_".self::$uniqueIdCounter;
-			$this->setId($id);
-		}
+                $this->addClass('mouf_select2');
 		
 		parent::toHtml();
 		?>
 		<script type="text/javascript">
-		jQuery(document).ready(function() { jQuery('#<?= htmlentities($id) ?>').select2({
+		jQuery(document).ready(function() { jQuery('select.mouf_select2').not( "[data-moufselect=true]" ).select2({
 			"width": "resolve"
-			}); });
+			}).data('moufselect', true); });
 		</script>
 		<?php 
 	}
