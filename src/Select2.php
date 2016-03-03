@@ -22,9 +22,9 @@ class Select2 extends Select {
 		parent::toHtml();
 		?>
 		<script type="text/javascript">
-		jQuery(document).ready(function() { jQuery('select.mouf_select2').not( "[data-moufselect=true]" ).select2({
+		jQuery(document).ready(function() { jQuery('select.mouf_select2').not( ".moufselect_done" ).select2({
 			"width": "resolve"
-			}).data('moufselect', true); });
+			}).addClass('moufselect_done'); });
 		</script>
 		<?php 
 	}
